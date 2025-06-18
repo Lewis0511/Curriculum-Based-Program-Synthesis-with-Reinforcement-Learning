@@ -1,0 +1,52 @@
+[
+  {
+    "code": "define void @\"main\"(i32* %\"arr\")\\n{\\nentry:\\n%\"ptr_0\" = getelementptr i32, i32* %\"arr\", i32 1\\nret void\\n}",
+    "task": "correctness task",
+    "architecture": "llvm_ir"
+  },
+  {
+    "code": "define void @\"main\"(i32* %\"arr\")\\n{\\nentry:\\n%\"ptr_0\" = getelementptr i32, i32* %\"arr\", i32 1\\n%\"int_0\" = load i32, i32* %\"ptr_0\"\\nret void\\n}",
+    "task": "correctness task",
+    "architecture": "llvm_ir"
+  },
+  {
+    "code": "define void @\"main\"(i32* %\"arr\")\\n{\\nentry:\\n%\"ptr_0\" = getelementptr i32, i32* %\"arr\", i32 1\\n%\"int_0\" = load i32, i32* %\"ptr_0\"\\n%\"int_1\" = load i32, i32* %\"ptr_0\"\\nret void\\n}",
+    "task": "correctness task",
+    "architecture": "llvm_ir"
+  },
+  {
+    "code": "define void @\"main\"(i32* %\"arr\")\\n{\\nentry:\\n%\"ptr_0\" = getelementptr i32, i32* %\"arr\", i32 1\\n%\"int_0\" = load i32, i32* %\"ptr_0\"\\n%\"int_1\" = load i32, i32* %\"ptr_0\"\\n%\"int_2\" = load i32, i32* %\"ptr_0\"\\nret void\\n}",
+    "task": "correctness task",
+    "architecture": "llvm_ir"
+  },
+  {
+    "code": "define void @\"main\"(i32* %\"arr\")\\n{\\nentry:\\n%\"ptr_0\" = getelementptr i32, i32* %\"arr\", i32 1\\n%\"int_0\" = load i32, i32* %\"ptr_0\"\\n%\"int_1\" = load i32, i32* %\"ptr_0\"\\n%\"int_2\" = load i32, i32* %\"ptr_0\"\\n%\"int_3\" = load i32, i32* %\"ptr_0\"\\nret void\\n}",
+    "task": "correctness task",
+    "architecture": "llvm_ir"
+  },
+  {
+    "code": "define void @\"main\"(i32* %\"arr\")\\n{\\nentry:\\n%\"ptr_0\" = getelementptr i32, i32* %\"arr\", i32 0\\n%\"ptr_1\" = getelementptr i32, i32* %\"arr\", i32 0\\nret void\\n}",
+    "task": "correctness task",
+    "architecture": "llvm_ir"
+  },
+  {
+    "code": "define void @\"main\"(i32* %\"arr\")\\n{\\nentry:\\n%\"ptr_0\" = getelementptr i32, i32* %\"arr\", i32 2\\n%\"ptr_1\" = getelementptr i32, i32* %\"arr\", i32 1\\n%\"int_0\" = load i32, i32* %\"ptr_1\"\\nret void\\n}",
+    "task": "correctness task",
+    "architecture": "llvm_ir"
+  },
+  {
+    "code": "define void @\"main\"(i32* %\"arr\")\\n{\\nentry:\\n%\"ptr_0\" = getelementptr i32, i32* %\"arr\", i32 2\\n%\"ptr_1\" = getelementptr i32, i32* %\"arr\", i32 1\\n%\"int_0\" = load i32, i32* %\"ptr_1\"\\n%\"int_1\" = load i32, i32* %\"ptr_1\"\\nret void\\n}",
+    "task": "correctness task",
+    "architecture": "llvm_ir"
+  },
+  {
+    "code": "define void @\"main\"(i32* %\"arr\")\\n{\\nentry:\\n%\"ptr_0\" = getelementptr i32, i32* %\"arr\", i32 2\\n%\"ptr_1\" = getelementptr i32, i32* %\"arr\", i32 1\\n%\"int_0\" = load i32, i32* %\"ptr_1\"\\n%\"int_1\" = load i32, i32* %\"ptr_1\"\\nstore i32 %\"int_0\", i32* %\"ptr_0\"\\nret void\\n}",
+    "task": "correctness task",
+    "architecture": "llvm_ir"
+  },
+  {
+    "code": "define void @\"main\"(i32* %\"arr\")\\n{\\nentry:\\n%\"ptr_0\" = getelementptr i32, i32* %\"arr\", i32 2\\n%\"ptr_1\" = getelementptr i32, i32* %\"arr\", i32 1\\n%\"int_0\" = load i32, i32* %\"ptr_1\"\\n%\"int_1\" = load i32, i32* %\"ptr_1\"\\nstore i32 %\"int_0\", i32* %\"ptr_0\"\\nstore i32 %\"int_1\", i32* %\"ptr_1\"\\nret void\\n}",
+    "task": "correctness task",
+    "architecture": "llvm_ir"
+  }
+]

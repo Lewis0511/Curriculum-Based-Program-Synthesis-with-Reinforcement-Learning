@@ -325,7 +325,7 @@ def DQN_train(num_episodes=1000, max_blocks=8, max_instructions=32, max_bool_reg
 
             rewards.append(reward)
             success_rates.append(reward)
-            if reward >= 1.0 / 6.0:  # TODO: unable to generate fully correct IIVM IR program for now
+            if reward >= 1.0 / 6.0:
                 num_correct_llvm_ir_code += 1
                 with open("correctness.txt", "a") as f: f.write(f"Episode: {episode}, reward: {reward}, correct generated LLVM IR code: \n{str(env.module)}\n")
 
